@@ -17,7 +17,7 @@ function Landing() {
         <h1 className={`uppercase text-[8vw] tracking-[-.3vw] leading-[7vw] ${rowdies.className}`}>hello there</h1>
         <div className="flex items-center">
         <MotionDiv initial={{width: 0}} animate={{width: "10.5vw"} } transition={{ease: [0.34, 1.56, 0.64, 1], duration: 1, delay: .5}}   className=" overflow-hidden rounded-sm h-[6.4vw]">
-          <Image alt="pearl girl"  className="h-[6.4vw]" src="/girl.png" ></Image>
+          <Image alt="pearl girl" height={40} width={180} className="h-[6.4vw] -[13vw]" src="/girl.png" ></Image>
         </MotionDiv>
         <h1 className={`uppercase text-[8vw] tracking-[-.3vw] leading-[7vw] ${rowdies.className}`}>I am</h1>
         </div>
