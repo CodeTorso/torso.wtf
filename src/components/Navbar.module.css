@@ -1,0 +1,93 @@
+.hamburger-lines {
+  height: 19.5px;
+  width: 24px;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  transform: translate(0, -150%);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.checkbox {
+  height: 19.5px;
+  width: 24px;
+}
+
+.hamburger-lines .line {
+  height: 3.5px;
+  width: 100%;
+  border-radius: 10px;
+  background: #e2e5e7;
+}
+
+.line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.line2 {
+  transition: transform 0.2s ease-in-out;
+}
+
+.line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+  transform: rotate(45deg);
+}
+
+input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+  transform: scaleY(0);
+}
+
+input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+  transform: rotate(-45deg);
+}
+
+input[type="checkbox"]:checked ~ .link-container {
+  transform: translate(0, 100%);
+}
+
+@media (max-width: 768px) {
+    .link-container {
+        transform: translate(0, -100%);
+        transition: 1s ease;
+        height: 100vh;
+        padding-top: 4rem;
+        background-color: black;
+        z-index: 1;
+        width: 100%;
+      }
+}
+
+@media (min-width: 768px) {
+  .hover-animation {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .hover-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transform-origin: bottom right;
+    transition: transform 0.4s cubic-bezier(.215,.61,.355,1);
+  }
+  
+  .hover-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+}
+
+
