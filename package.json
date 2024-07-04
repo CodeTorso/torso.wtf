@@ -12,10 +12,14 @@
     "deploy": "bun pages:build && wrangler pages deploy",
     "cf-typegen": "wrangler types --env-interface CloudflareEnv env.d.ts"
   },
+  "prettier": {
+    "plugins": ["prettier-plugin-tailwindcss"]
+  },
   "dependencies": {
+    "next": "14.1.0",
+    "prettier-plugin-tailwindcss": "^0.6.5",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.1.0"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "@cloudflare/next-on-pages": "1",
