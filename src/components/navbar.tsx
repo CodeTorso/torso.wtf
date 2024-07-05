@@ -3,7 +3,7 @@ import React from "react";
 
 function Navbar() {
   return (
-    <nav className="flex w-full justify-between py-4">
+    <nav className="flex w-full justify-between py-4 gap-8">
       <Link href="/">
         <h1>@CodeTorso</h1>
       </Link>
