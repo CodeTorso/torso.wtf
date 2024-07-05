@@ -11,8 +11,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://torso.wtf/og-image.png",
-        width: 1125,
-        height: 582,
+        width: 2005,
+        height: 1103,
         alt: "torso.wtf banner",
       },
     ],
@@ -43,8 +43,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://torso.wtf/og-image.png",
-        width: 1125,
-        height: 582,
+        width: 2005,
+        height: 1103,
         alt: "torso.wtf banner",
       },
     ],
