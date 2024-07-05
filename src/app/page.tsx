@@ -4,6 +4,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import Navbar from "@/components/navbar";
 
+export const runtime = "edge";
+
 async function page() {
   return (
     <main className="px-2 text-whitetext-center m-auto flex h-screen flex-col items-center justify-center text-white md:max-w-2xl">

@@ -1,5 +1,4 @@
 import Navbar from "@/components/navbar";
-import Link from "next/link";
 
 export const runtime = "edge";
 
