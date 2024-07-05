@@ -31,7 +31,14 @@ function Content() {
         and I love making things that occasionally help people, plus I have a
         hundred unfinished projects.
       </h2>
-
+      <Contact />
+      <div className="flex gap-3 text-2xl font-semibold">
+        <Discord />•
+        <X />
+        {/* Once I have Content there also */}
+        {/* <YouTube />•
+        <Instagram /> */}
+      </div>
     </div>
   );
 }
