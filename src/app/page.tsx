@@ -1,13 +1,9 @@
 "use client";
 
 import React from "react";
-// @ts-ignore
-import LocomotiveScroll from "locomotive-scroll";
 import { motion } from "framer-motion";
 
 async function page() {
-  const locomotiveScroll = new LocomotiveScroll();
-
   return (
     <>
       <motion.div
