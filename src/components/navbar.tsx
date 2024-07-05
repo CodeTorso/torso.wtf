@@ -3,7 +3,7 @@ import React from "react";
 
 function Navbar() {
   return (
-    <nav className="flex w-full justify-between py-4 gap-8">
+    <nav className="text-xl flex w-full justify-between gap-8 py-4">
       <Link href="/">
         <h1>@CodeTorso</h1>
       </Link>
@@ -14,14 +14,6 @@ function Navbar() {
           </div>
           <div className="underline-offset-4 transition-all hover:underline group-hover/link:-translate-y-full">
             Work
-          </div>
-        </Link>
-        <Link href="/socials" className="group/link h-6 overflow-hidden">
-          <div className="transition-all group-hover/link:-translate-y-full">
-            Socials
-          </div>
-          <div className="underline-offset-4 transition-all hover:underline group-hover/link:-translate-y-full">
-            Socials
           </div>
         </Link>
         <Link href="/about" className="group/link h-6 overflow-hidden">

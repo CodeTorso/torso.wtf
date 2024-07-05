@@ -3,7 +3,7 @@ import {motion} from "framer-motion"
 
 function loading() {
   return (
-    <div className="flex h-screen items-center justify-center bg-orange-700 text-white">
+    <div className="flex h-screen items-center justify-center bg-lime-300 text-black">
       <div className="text-[5vw] font-semibold">Loading...</div>
     </div>
   );

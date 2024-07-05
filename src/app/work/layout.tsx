@@ -11,6 +11,6 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-      <header className="bg-green-900">{children}</header>
+      <header className="bg-amber-300">{children}</header>
   );
 }
