@@ -46,7 +46,8 @@ import { FaTwitter, FaYoutube, FaInstagram, FaDiscord } from "react-icons/fa6";
 
 function Discord() {
   return (
-    <a href="https://discord.gg/f6fQDDRG">
+    // thanks Devansh for the https://x.com/Devansh_1405 dm invite link.
+    <a href="https://discord.com/users/1101577942624129117">
       <FaDiscord />
     </a>
   );
