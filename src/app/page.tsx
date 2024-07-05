@@ -4,7 +4,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import Navbar from "@/components/navbar";
 
-export const runtime = "edge";
 
 async function page() {
   return (
