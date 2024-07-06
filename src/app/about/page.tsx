@@ -1,7 +1,6 @@
 
-import { Montserrat } from "next/font/google";
+import { GeistSans } from 'geist/font/sans';
 
-const montserrat = Montserrat({ subsets: ["latin"], weight: ["500"] });
 
 import React from "react";
 import Navbar from "@/components/navbar";
@@ -15,7 +14,7 @@ async function page() {
           <div className="m-auto max-w-2xl">
             <Navbar />
           </div>
-          <div className={`max-w-4xl pt-32 pb-20 text-xl leading-relaxed flex flex-col gap-3 tracking-wide ${montserrat.className}`}>
+          <div className={`max-w-4xl pt-32 pb-20 text-xl leading-relaxed text-justify flex flex-col gap-5 tracking-normal ${GeistSans.className}`}>
             <p>
               I&apos;m just an ordinary teenager currently living in India. My first
               exposure to programming came in 2019 when I learned about C++ in

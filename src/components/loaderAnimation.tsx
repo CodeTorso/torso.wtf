@@ -4,7 +4,6 @@ import React, { useEffect } from "react";
 import {motion} from "framer-motion"
 
 function LoaderAnimation({bg}: {bg:string}) {
-
   return (
     <motion.div
       initial={{ opacity: 1, y: 0 }}
