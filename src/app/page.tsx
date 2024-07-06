@@ -54,7 +54,7 @@ import SlideUpAnimation from "@/components/slideUpAnimation";
 function Discord() {
   return (
     // thanks Devansh for the https://x.com/Devansh_1405 dm invite link.
-    <a href="https://discord.com/users/1101577942624129117">
+    <a target="_blank" href="https://discord.com/users/1101577942624129117">
       <FaDiscord />
     </a>
   );
@@ -62,7 +62,7 @@ function Discord() {
 
 function Github() {
   return (
-    <a href="https://github.com/codetorso">
+    <a target="_blank" href="https://github.com/codetorso">
       <FaGithub />
     </a>
   );
@@ -107,7 +107,7 @@ function Contact() {
         DM
       </a>{" "}
       or{" "}
-      <a className="underline underline-offset-4" href="mailto:hey@torso.wtf">
+      <a target="_blank" className="underline underline-offset-4" href="mailto:hey@torso.wtf">
         Email.
       </a>
     </h2>

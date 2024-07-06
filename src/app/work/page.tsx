@@ -4,15 +4,15 @@ import SlideUpAnimation from "@/components/slideUpAnimation";
 
 async function page() {
   return (
-    <div className="m-auto flex max-w-2xl flex-col ">
+    <div className="m-auto flex max-w-2xl flex-col">
       <SlideUpAnimation>
         <Navbar />
-        <h1 className=" pt-32 text-4xl font-semibold">
+        <h1 className="pt-32 text-4xl font-semibold">
           This page is under Construction :/ Some of my work include:
         </h1>
         <div className="flex flex-col gap-3 pt-16">
           <p className="text-lg">
-            <a
+            <a target="_blank"
               href="https://www.supermemory.ai"
               className="underline underline-offset-2"
             >
@@ -20,14 +20,14 @@ async function page() {
             </a>
             , this was a team project with Dhravya and Kartik.
           </p>
-          <a
+          <a target="_blank"
             className="text-lg underline underline-offset-2"
             href="https://www.inspiring.lol"
           >
             inspiring.lol
           </a>
           <p className="text-lg">
-            <a
+            <a target="_blank"
               className="underline underline-offset-2"
               href="https://www.torso.wtf"
             >
@@ -39,9 +39,9 @@ async function page() {
         <h1 className="pt-8 text-4xl font-semibold">
           Upcoming projects I am working on:
         </h1>
-        <div className="flex flex-col gap-5 pt-16 pb-20">
+        <div className="flex flex-col gap-5 pb-20 pt-16">
           <p className="text-lg">
-            <a
+            <a target="_blank"
               className="underline underline-offset-2"
               href="https://www.concentrated.ai"
             >
@@ -59,7 +59,12 @@ async function page() {
           </p>
           <p className="text-lg">
             Google&apos;s SEO does not rank good blogs well. What if we create a
-            separate search engine for that
+            separate search engine for that. Also, there are 100s of blogs
+            website, in this article great articles get lost.
+          </p>
+          <p className="text-lg">
+            T3 Stack is great, what if we add more things into it. In a way that
+            improves developer productivity
           </p>
         </div>
       </SlideUpAnimation>
