@@ -3,9 +3,9 @@ import React from "react";
 
 function Navbar() {
   return (
-    <nav className="text-xl flex w-full justify-between gap-8 py-4">
+    <nav className="text-xl flex w-full justify-end md:justify-between gap-4 md:gap-8 py-4">
       <Link href="/">
-        <h1>@CodeTorso/Home</h1>
+        <h1 className="hidden md:block">@CodeTorso/Home</h1><h1 className="block md:hidden">Home</h1>
       </Link>
       <div className="flex gap-4">
         <Link href="/work" className="group/link h-6 overflow-hidden">

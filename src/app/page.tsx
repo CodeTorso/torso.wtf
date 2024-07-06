@@ -5,12 +5,14 @@ export const runtime = "edge";
 
 async function page() {
   return (
-    <main className="text-whitetext-center m-auto flex min-h-screen flex-col items-center justify-center px-2 text-white md:max-w-2xl">
-      <SlideUpAnimation>
-        <Navbar />
-        <Content />
-      </SlideUpAnimation>
-    </main>
+    <div className="bg-blue-700">
+      <main className="text-whitetext-center m-auto flex min-h-screen flex-col items-center justify-center px-6 text-white md:max-w-2xl">
+        <SlideUpAnimation>
+          <Navbar />
+          <Content />
+        </SlideUpAnimation>
+      </main>
+    </div>
   );
 }
 

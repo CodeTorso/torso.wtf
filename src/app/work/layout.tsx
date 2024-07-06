@@ -11,6 +11,6 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-      <header className="bg-amber-300">{children}</header>
+      <main className="bg-amber-300 min-h-screen px-6 text-black">{children}</main>
   );
 }

@@ -7,7 +7,7 @@ import SlideUpAnimation from "@/components/slideUpAnimation";
 async function page() {
   return (
     <>
-      <main className="flex min-h-screen flex-col items-center px-6 text-black">
+      <main className="flex justify-center">
         <SlideUpAnimation>
           <div className="m-auto max-w-2xl">
             <Navbar />

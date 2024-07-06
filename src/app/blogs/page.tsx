@@ -8,7 +8,7 @@ async function page() {
   const posts = await getBlogs();
   return (
     <>
-      <main className="m-auto flex min-h-screen max-w-2xl flex-col text-white">
+      <main className="m-auto flex max-w-2xl flex-col">
         <SlideUpAnimation>
           <Navbar />
           <Blogs blogs={posts} />

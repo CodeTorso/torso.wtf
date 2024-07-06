@@ -4,10 +4,10 @@ import SlideUpAnimation from "@/components/slideUpAnimation";
 
 async function page() {
   return (
-    <main className="min-h-screen m-auto flex max-w-2xl flex-col px-6 text-black">
+    <div className="m-auto flex max-w-2xl flex-col ">
       <SlideUpAnimation>
         <Navbar />
-        <h1 className="pt-8 text-4xl font-semibold">
+        <h1 className=" pt-32 text-4xl font-semibold">
           This page is under Construction :/ Some of my work include:
         </h1>
         <div className="flex flex-col gap-3 pt-16">
@@ -39,7 +39,7 @@ async function page() {
         <h1 className="pt-8 text-4xl font-semibold">
           Upcoming projects I am working on:
         </h1>
-        <div className="flex flex-col gap-5 pt-16">
+        <div className="flex flex-col gap-5 pt-16 pb-20">
           <p className="text-lg">
             <a
               className="underline underline-offset-2"
@@ -63,7 +63,7 @@ async function page() {
           </p>
         </div>
       </SlideUpAnimation>
-    </main>
+    </div>
   );
 }
 
