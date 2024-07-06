@@ -8,7 +8,6 @@ async function page() {
   const posts = await getBlogs();
   return (
     <>
-      <LoaderAnimation bg="bg-black" />
       <main className="m-auto flex h-screen max-w-2xl flex-col text-white">
         <SlideUpAnimation>
           <Navbar />
