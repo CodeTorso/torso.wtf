@@ -10,7 +10,7 @@ export default function RootLayout({
   return (
     <div className="m-auto max-w-6xl">
       <SlideUpAnimation>
-        <Link href="/blogs" className="flex items-center text-gray-300">
+        <Link href="/blogs" className="flex items-center text-gray-300 py-4">
           <Back />
           Back
         </Link>

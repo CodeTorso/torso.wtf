@@ -7,8 +7,8 @@ function Navbar() {
       <Link href="/">
         <h1 className="hidden md:block">@CodeTorso/Home</h1><h1 className="block md:hidden">Home</h1>
       </Link>
-      <div className="flex gap-4">
-        <Link href="/work" className="group/link h-6 overflow-hidden">
+      <div className="flex">
+        <Link href="/work" className="group/link h-8 overflow-hidden px-2 py-1">
           <div className="transition-all group-hover/link:-translate-y-full">
             Work
           </div>
@@ -16,7 +16,7 @@ function Navbar() {
             Work
           </div>
         </Link>
-        <Link href="/about" className="group/link h-6 overflow-hidden">
+        <Link href="/about" className="group/link h-8 overflow-hidden px-2 py-1">
           <div className="transition-all group-hover/link:-translate-y-full">
             About
           </div>
@@ -24,7 +24,7 @@ function Navbar() {
             About
           </div>
         </Link>
-        <Link href="/blogs" className="group/link h-6 overflow-hidden">
+        <Link href="/blogs" className="group/link h-8 overflow-hidden px-2 py-1">
           <div className="transition-all group-hover/link:-translate-y-full">
             Blogs
           </div>

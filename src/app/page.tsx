@@ -31,7 +31,8 @@ function Content() {
         concepts.
       </h2>
       <Contact />
-      <div className="flex gap-3 text-2xl font-semibold">
+      <div className="flex items-center gap-3 text-2xl font-semibold">
+        <Github />•
         <Discord />•
         <X />
         {/* Once I have Content there also */}
@@ -41,7 +42,13 @@ function Content() {
     </div>
   );
 }
-import { FaTwitter, FaYoutube, FaInstagram, FaDiscord } from "react-icons/fa6";
+import {
+  FaTwitter,
+  FaYoutube,
+  FaInstagram,
+  FaDiscord,
+  FaGithub,
+} from "react-icons/fa6";
 import SlideUpAnimation from "@/components/slideUpAnimation";
 
 function Discord() {
@@ -53,9 +60,17 @@ function Discord() {
   );
 }
 
+function Github() {
+  return (
+    <a href="https://github.com/codetorso">
+      <FaGithub />
+    </a>
+  );
+}
+
 function X() {
   return (
-    <a href="https://x.com/codetorso" target="_blank" className="flex gap-1">
+    <a className="flex items-center gap-1" href="https://x.com/codetorso" target="_blank">
       <FaTwitter />
       <h3> / 1076 Posts</h3>
     </a>
