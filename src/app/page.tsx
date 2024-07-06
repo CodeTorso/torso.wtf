@@ -1,4 +1,3 @@
-
 import React from "react";
 import Navbar from "@/components/navbar";
 
@@ -6,7 +5,7 @@ export const runtime = "edge";
 
 async function page() {
   return (
-    <main className="text-whitetext-center m-auto flex h-screen flex-col items-center justify-center px-2 text-white md:max-w-2xl">
+    <main className="text-whitetext-center m-auto flex min-h-screen flex-col items-center justify-center px-2 text-white md:max-w-2xl">
       <SlideUpAnimation>
         <Navbar />
         <Content />

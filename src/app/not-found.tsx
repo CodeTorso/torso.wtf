@@ -4,7 +4,7 @@ export const runtime = "edge";
 
 export default function NotFound() {
   return (
-    <div className="flex h-screen items-center justify-center text-center text-[4vw] font-normal text-white">
+    <div className="flex min-h-screen items-center justify-center text-center text-[4vw] font-normal text-white">
       <div className="space-y-8">
         <Navbar />
         <div>
