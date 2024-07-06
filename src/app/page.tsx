@@ -4,9 +4,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import Navbar from "@/components/navbar";
 
+export const runtime = "edge";
+
 async function page() {
   return (
-    <main className="px-2 text-whitetext-center m-auto flex h-screen flex-col items-center justify-center text-white md:max-w-2xl">
+    <main className="text-whitetext-center m-auto flex h-screen flex-col items-center justify-center px-2 text-white md:max-w-2xl">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -28,8 +30,9 @@ function Content() {
         I am @codetorso
       </h1>
       <h2 className="text-2xl font-semibold">
-        and I love making things that occasionally help people, plus I have a
-        hundred unfinished projects.
+        and I love making things that occasionally help people, plus I do some
+        content creation for fun, and writing blogs about various development
+        concepts.
       </h2>
       <Contact />
       <div className="flex gap-3 text-2xl font-semibold">
@@ -57,7 +60,7 @@ function X() {
   return (
     <a href="https://x.com/codetorso" target="_blank" className="flex gap-1">
       <FaTwitter />
-      <h3> / 1065 Posts</h3>
+      <h3> / 1076 Posts</h3>
     </a>
   );
 }
