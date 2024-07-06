@@ -1,27 +1,23 @@
-"use client";
 
 import { Montserrat } from "next/font/google";
 
 const montserrat = Montserrat({ subsets: ["latin"], weight: ["500"] });
 
 import React from "react";
-import { motion } from "framer-motion";
 import Navbar from "@/components/navbar";
+import SlideUpAnimation from "@/components/slideUpAnimation";
 
 async function page() {
   return (
     <>
       <main className="flex min-h-screen flex-col items-center text-black">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-        >
+        <SlideUpAnimation>
           <div className="m-auto max-w-2xl">
             <Navbar />
           </div>
           <div className={`max-w-4xl pt-32 pb-20 text-xl leading-relaxed flex flex-col gap-3 tracking-wide ${montserrat.className}`}>
             <p>
-              I'm just an ordinary teenager currently living in India. My first
+              I&apos;m just an ordinary teenager currently living in India. My first
               exposure to programming came in 2019 when I learned about C++ in
               school. I built a simple calculator on my phone and proudly showed
               it to everyone—and that was it for the time.
@@ -41,7 +37,7 @@ async function page() {
               then, the journey has been incredibly rewarding and exciting.
             </p>
           </div>
-        </motion.div>
+          </SlideUpAnimation>
       </main>
     </>
   );

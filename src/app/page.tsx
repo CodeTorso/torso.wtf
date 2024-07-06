@@ -1,7 +1,5 @@
-"use client";
 
 import React from "react";
-import { motion } from "framer-motion";
 import Navbar from "@/components/navbar";
 
 export const runtime = "edge";
@@ -9,13 +7,10 @@ export const runtime = "edge";
 async function page() {
   return (
     <main className="text-whitetext-center m-auto flex h-screen flex-col items-center justify-center px-2 text-white md:max-w-2xl">
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-      >
+      <SlideUpAnimation>
         <Navbar />
         <Content />
-      </motion.div>
+      </SlideUpAnimation>
     </main>
   );
 }
@@ -46,6 +41,7 @@ function Content() {
   );
 }
 import { FaTwitter, FaYoutube, FaInstagram, FaDiscord } from "react-icons/fa6";
+import SlideUpAnimation from "@/components/slideUpAnimation";
 
 function Discord() {
   return (

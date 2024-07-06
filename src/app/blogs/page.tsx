@@ -1,26 +1,19 @@
-"use client";
-
 import React from "react";
-import { motion } from "framer-motion";
 import Navbar from "@/components/navbar";
-
+import { Blogs } from "@/components/blogs";
+import { getBlogs } from "@/lib/getPosts";
+import LoaderAnimation from "@/components/loaderAnimation";
+import SlideUpAnimation from "@/components/slideUpAnimation";
 async function page() {
+  const posts = await getBlogs();
   return (
     <>
-      <motion.div
-        initial={{ opacity: 1, y: 0 }}
-        animate={{ opacity: 0, y: 10 }}
-        className="pointer-events-none fixed flex h-screen w-full items-center justify-center bg-black text-white"
-      >
-        <div className="text-[5vw] font-semibold">Loading...</div>
-      </motion.div>
+      <LoaderAnimation bg="bg-black" />
       <main className="m-auto flex h-screen max-w-2xl flex-col text-white">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-        >
+        <SlideUpAnimation>
           <Navbar />
-        </motion.div>
+          <Blogs blogs={posts} />
+        </SlideUpAnimation>
       </main>
     </>
   );

@@ -1,19 +1,14 @@
-"use client";
-
 import React from "react";
-import { motion } from "framer-motion";
 import Navbar from "@/components/navbar";
+import SlideUpAnimation from "@/components/slideUpAnimation";
 
 async function page() {
   return (
     <>
       <main className="m-auto flex h-screen max-w-2xl flex-col text-black">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-        >
+        <SlideUpAnimation>
           <Navbar />
-        </motion.div>
+        </SlideUpAnimation>
       </main>
     </>
   );
