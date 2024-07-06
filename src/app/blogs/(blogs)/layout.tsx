@@ -1,9 +1,18 @@
+import Back from "@/components/icons/back";
+import SlideUpAnimation from "@/components/slideUpAnimation";
+import Link from "next/link";
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-      <header className="bg-black m-auto flex h-screen max-w-2xl flex-col text-white">{children}</header>
+    <div className="m-auto flex h-screen max-w-6xl flex-col bg-black text-white">
+      <SlideUpAnimation>
+        <Link href="/blogs" className="flex items-center text-gray-300"><Back/>Back</Link>
+        <div className="max-w-5xl">{children}</div>
+      </SlideUpAnimation>
+    </div>
   );
 }
