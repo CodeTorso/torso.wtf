@@ -12,7 +12,8 @@ async function page() {
         </h1>
         <div className="flex flex-col gap-3 pt-16">
           <p className="text-lg">
-            <a target="_blank"
+            <a
+              target="_blank"
               href="https://www.supermemory.ai"
               className="underline underline-offset-2"
             >
@@ -20,14 +21,16 @@ async function page() {
             </a>
             , this was a team project with Dhravya and Kartik.
           </p>
-          <a target="_blank"
+          <a
+            target="_blank"
             className="text-lg underline underline-offset-2"
             href="https://www.inspiring.lol"
           >
             inspiring.lol
           </a>
           <p className="text-lg">
-            <a target="_blank"
+            <a
+              target="_blank"
               className="underline underline-offset-2"
               href="https://www.torso.wtf"
             >
@@ -41,7 +44,8 @@ async function page() {
         </h1>
         <div className="flex flex-col gap-5 pb-20 pt-16">
           <p className="text-lg">
-            <a target="_blank"
+            <a
+              target="_blank"
               className="underline underline-offset-2"
               href="https://www.concentrated.ai"
             >
@@ -50,21 +54,21 @@ async function page() {
             , this is a project under n&w s5 (launching on 20th July)
           </p>
           <p className="text-lg">
-            An AI application that simplifies creating flash cards, with a
-            powerful algorthm
+            An AI application that simplifies creating flash cards with a
+            powerful algorithm.
           </p>
           <p className="text-lg">
-            A lot of indian facts are hidden, a lot of india&apos;s data is
-            scattered what if we gather it all at one place
+            Many Indian facts are hidden, and much of India's data is scattered.
+            What if we gather it all in one place?
           </p>
           <p className="text-lg">
-            Google&apos;s SEO does not rank good blogs well. What if we create a
-            separate search engine for that. Also, there are 100s of blogs
-            website, in this article great articles get lost.
+            Google's SEO does not rank good blogs well. What if we create a
+            separate search engine for them? There are hundreds of blog
+            websites, causing great articles to get lost.
           </p>
           <p className="text-lg">
-            T3 Stack is great, what if we add more things into it. In a way that
-            improves developer productivity
+            The T3 Stack is great. What if we add more features to it in a way
+            that improves developer productivity?
           </p>
         </div>
       </SlideUpAnimation>
