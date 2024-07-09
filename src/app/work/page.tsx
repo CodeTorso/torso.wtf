@@ -58,11 +58,11 @@ async function page() {
             powerful algorithm.
           </p>
           <p className="text-lg">
-            Many Indian facts are hidden, and much of India's data is scattered.
+            Many Indian facts are hidden, and much of India&apos;s data is scattered.
             What if we gather it all in one place?
           </p>
           <p className="text-lg">
-            Google's SEO does not rank good blogs well. What if we create a
+            Google&apos;s SEO does not rank good blogs well. What if we create a
             separate search engine for them? There are hundreds of blog
             websites, causing great articles to get lost.
           </p>

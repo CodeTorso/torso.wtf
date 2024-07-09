@@ -18,6 +18,9 @@ const config = {
       },
     },
     extend: {
+      clipPath: {
+        'polygon-zero': 'polygon(0 0, 100% 0, 100% 0, 0 0)',
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

@@ -6,6 +6,13 @@ export const runtime = "edge";
 async function page() {
   return (
     <div className="bg-blue-700">
+      <div className="disappear absolute z-50 left-0 top-0 flex h-screen w-full items-center justify-center bg-blue-700">
+        <h1
+          className={`text-effect overflow-hidden p-2 text-9xl italic tracking-normal text-white`}
+        >
+          @CodeTorso
+        </h1>
+      </div>
       <main className="text-whitetext-center m-auto flex min-h-screen flex-col items-center justify-center px-6 text-white md:max-w-2xl">
         <SlideUpAnimation>
           <Navbar />
@@ -34,10 +41,9 @@ function Content() {
       <div className="flex items-center gap-3 text-2xl font-semibold">
         <Github />•
         <Discord />•
-        <X />
-        {/* Once I have Content there also */}
-        {/* <YouTube />•
-        <Instagram /> */}
+        <X />•{/* Once I have Content there also */}
+        <YouTube />
+        {/* <Instagram /> */}
       </div>
     </div>
   );
@@ -70,7 +76,11 @@ function Github() {
 
 function X() {
   return (
-    <a className="flex items-center gap-1" href="https://x.com/codetorso" target="_blank">
+    <a
+      className="flex items-center gap-1"
+      href="https://x.com/codetorso"
+      target="_blank"
+    >
       <FaTwitter />
       <h3> / 1076 Posts</h3>
     </a>
@@ -79,10 +89,14 @@ function X() {
 
 function YouTube() {
   return (
-    <div className="flex gap-1">
+    <a
+      href="https://www.youtube.com/@CodeTorso"
+      target="_blank"
+      className="flex items-center gap-1"
+    >
       <FaYoutube />
-      <h3>/ No Content</h3>
-    </div>
+      <h3>/ 1 Video</h3>
+    </a>
   );
 }
 
@@ -90,7 +104,7 @@ function Instagram() {
   return (
     <div className="flex gap-1">
       <FaInstagram />
-      <h3>/ No Content</h3>
+      {/* <h3>/ No Content</h3> */}
     </div>
   );
 }
@@ -107,7 +121,11 @@ function Contact() {
         DM
       </a>{" "}
       or{" "}
-      <a target="_blank" className="underline underline-offset-4" href="mailto:hey@torso.wtf">
+      <a
+        target="_blank"
+        className="underline underline-offset-4"
+        href="mailto:hey@torso.wtf"
+      >
         Email.
       </a>
     </h2>
