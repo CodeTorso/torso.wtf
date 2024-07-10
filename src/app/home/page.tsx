@@ -7,9 +7,11 @@ export const runtime = "edge";
 async function page() {
   return (
     <div className="bg-blue-700">
-      <SlideUpAnimation>
-        <Home />
-      </SlideUpAnimation>
+      <main className="m-auto flex min-h-screen flex-col items-center justify-center px-4 text-white md:max-w-2xl md:px-0">
+        <SlideUpAnimation>
+          <Home />
+        </SlideUpAnimation>
+      </main>
     </div>
   );
 }

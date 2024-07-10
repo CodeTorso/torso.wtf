@@ -8,7 +8,9 @@ async function page() {
   return (
     <div className="bg-blue-700">
       <Startscreen />
-      <Home />
+      <main className="m-auto flex min-h-screen flex-col items-center justify-center px-4 text-white md:max-w-2xl md:px-0">
+        <Home />
+      </main>
     </div>
   );
 }

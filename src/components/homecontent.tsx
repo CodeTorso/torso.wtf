@@ -1,13 +1,13 @@
-import React from 'react'
+import React from "react";
 import Navbar from "@/components/navbar";
 
 function Home() {
   return (
-    <main className="text-whitetext-center m-auto flex min-h-screen flex-col items-center justify-center md:px-0 px-4 text-white md:max-w-2xl">
-    <Navbar />
-    <Content />
-</main>
-  )
+    <>
+      <Navbar />
+      <Content />
+    </>
+  );
 }
 
 function Content() {
@@ -42,7 +42,6 @@ import {
   FaDiscord,
   FaGithub,
 } from "react-icons/fa6";
-import SlideUpAnimation from "@/components/slideUpAnimation";
 
 function Discord() {
   return (
@@ -69,7 +68,7 @@ function X() {
       target="_blank"
     >
       <FaTwitter />
-      <h3 className='hidden md:block'> / 1076 Posts</h3>
+      <h3 className="hidden md:block"> / 1076 Posts</h3>
     </a>
   );
 }
@@ -82,7 +81,7 @@ function YouTube() {
       className="flex items-center gap-1"
     >
       <FaYoutube />
-      <h3 className='hidden md:block'>/ 1 Video</h3>
+      <h3 className="hidden md:block">/ 1 Video</h3>
     </a>
   );
 }
@@ -119,4 +118,4 @@ function Contact() {
   );
 }
 
-export default Home
+export default Home;
