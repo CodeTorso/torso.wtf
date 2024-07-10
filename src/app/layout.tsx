@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Bricolage_Grotesque} from "next/font/google";
 import "./globals.css";
 // old font -> Josefin_Sans
-const josefin_Sans = Bricolage_Grotesque({ subsets: ["latin"], weight: ["400","600", "800"] });
+const josefin_Sans = Bricolage_Grotesque({ subsets: ["latin"], weight: ["400", "600", "800"] });
 
 export const metadata: Metadata = {
   title: "CodeTorso",

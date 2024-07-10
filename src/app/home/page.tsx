@@ -1,5 +1,5 @@
 import Home from "@/components/homecontent";
-import Startscreen from "@/components/startscreen";
+import SlideUpAnimation from "@/components/slideUpAnimation";
 import React from "react";
 
 export const runtime = "edge";
@@ -7,8 +7,9 @@ export const runtime = "edge";
 async function page() {
   return (
     <div className="bg-blue-700">
-      <Startscreen />
-      <Home />
+      <SlideUpAnimation>
+        <Home />
+      </SlideUpAnimation>
     </div>
   );
 }

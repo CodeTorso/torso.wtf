@@ -1,12 +1,12 @@
 import type { MDXComponents } from 'mdx/types';
-import { Blockquote, Code, Heading, Paragraph,  } from '@/components/heading';
+import { Blockquote,  Heading, Paragraph,  } from '@/components/heading';
 
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
     h1: Heading,
     p: Paragraph,
-    code: Code,
+    // code: Code,
     blockquote: Blockquote,
     ...components,
   };

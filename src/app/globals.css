@@ -92,7 +92,7 @@
 
 .text-effect {
   clip-path: inset(0 100% 0 0);
-  animation: textReveal 1s cubic-bezier(.86, 0, .07, 1) 0.5s forwards;
+  animation: textReveal .8s cubic-bezier(.86, 0, .07, 1) .5s forwards;
 }
 
 @keyframes textReveal {
@@ -105,22 +105,15 @@
 }
 
 .disappear {
-  animation: disappear 2s cubic-bezier(1, 0, 0, 1)  1.3s forwards;
-  border: 1px solid #3b82f6;
-  border-width: 10px 0 0 0;
+  animation: disappear .8s cubic-bezier(.645, .045, .355, 1)  1.5s forwards;
 }
 
 @keyframes disappear {
   0% {
     clip-path: inset(0 0 0 0);
-    opacity: 1;
-  }
-  50% {
-    opacity: 1;
   }
   100% {
     clip-path: inset(0 0 0 100%);
-    opacity: 0;
     pointer-events: none;
   }
 }
