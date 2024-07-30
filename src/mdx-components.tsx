@@ -1,5 +1,5 @@
 import type { MDXComponents } from 'mdx/types';
-import { Blockquote,  Heading, Paragraph,  } from '@/components/heading';
+import { Blockquote,  Heading, Paragraph, Link  } from '@/components/heading';
 
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
@@ -7,6 +7,8 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     h1: Heading,
     p: Paragraph,
     // code: Code
+    a: Link,
+    // Link,
     blockquote: Blockquote,
     ...components,
   };

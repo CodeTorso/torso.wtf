@@ -25,6 +25,15 @@ export function Paragraph(props: ComponentPropsWithoutRef<"p">) {
   );
 }
 
+export function Link(props: ComponentPropsWithoutRef<"a">) {
+  return (
+    <a
+      className={`py-2 text-xl font-normal leading-8 text-gray-300 underline underline-2 ${GeistSans.className}`}
+      {...props}
+    />
+  );
+}
+
 // export function Code(props: ComponentPropsWithoutRef<"code">) {
 //   const codeRef = useRef(null);
 

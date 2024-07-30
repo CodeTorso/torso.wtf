@@ -7,7 +7,7 @@ export function Blogs({ blogs }: { blogs: Blogs[] }) {
       {blogs.map(({ slug, title, publishDate, readingTime, description }) => (
         <li key={slug} className="flex flex-col gap-2">
           <h2 className="underline-offset-2 underline">
-            <Link href={`/blogs/${slug}`}>{title} {readingTime}</Link>
+            <Link href={`/blogs/${slug}`}>{title}</Link>
           </h2>
           <h3 className="text-gray-200">
             {description}
